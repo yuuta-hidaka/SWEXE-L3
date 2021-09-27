@@ -1,0 +1,9 @@
+<% a =(@tweet.tdate.to_time) %>
+<p>
+<strong>ツイート:</strong>
+<%= @tweet.message %><br>
+<strong>投稿時間:</strong>
+<%= a %>
+</p>
+
+<%= link_to '戻る', '/' %>

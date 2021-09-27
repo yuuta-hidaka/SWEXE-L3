@@ -1,0 +1,8 @@
+<% a =(@tweet.tdate.to_time) %>
+<%= form_for @tweet, url: {action: :update} do |f| %>
+<p><%= f.label :message, 'ツイート' %><br>
+<%= f.text_field :message %><br>
+<%= '投稿時間' %><br>
+<%= a %></p>
+<%= f.submit '更新' %>
+<% end %>
