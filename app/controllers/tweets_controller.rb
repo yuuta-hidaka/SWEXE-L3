@@ -17,7 +17,7 @@ class TweetsController < ApplicationController
     def destroy
         tweet = Tweet.find(params[:id])
         tweet.destroy
-        redirect_to tweets_path
+        redirect_to :root
     end
     def edit
         @tweet = Tweet.find(params[:id])
