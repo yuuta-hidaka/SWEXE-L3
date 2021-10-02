@@ -1,7 +1,7 @@
 <% if flash[:notice] %>
 <%= flash[:notice] %>
 <% end %>
-
+<body>
 <% @tweets.each do |tweet| %>
 <% a =(Time.now.to_time-tweet.tdate.to_time)/60 %>
 <p><%= tweet.message %><br>
@@ -10,5 +10,6 @@
 <%= link_to '表示', "/tweets/#{tweet.id}" %>
  <%= link_to '編集', "/tweets/#{tweet.id}/edit" %>
 <% end %>
+</body>
 <br>
-<%= link_to 'ツイートする', '/tweets/new' %>
+

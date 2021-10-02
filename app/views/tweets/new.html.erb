@@ -4,7 +4,7 @@
     <% @tweet.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
     <% end %>
-    </ul>
+    </ul><>
 <% end %>
 
 <%= form_for @tweet , url: {action: :create} do |f| %>

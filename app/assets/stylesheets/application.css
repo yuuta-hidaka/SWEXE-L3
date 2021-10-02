@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+body{
+    width:1100px; 
+    margin: 0px auto;
+}
+#sidebar{
+    width:220px;
+    float: left;
+    margin:10px;
+}
+#content{
+    width:720px; 
+    float: right;
+}
+#side :hover{
+    background-color: #EEEEEE;
+    color: black;
+    border-radius:50px;
+}
+#side2{
+    background-color: #00bfff;
+     padding:10px;
+    color: white;
+     border-radius:50px;
+     text-align:center;
+}
+#side2:hover{
+     background-color: #EEEEEE;
+     
+    color: black;
+    border-radius:15px 15px 15px 15px;
+}
